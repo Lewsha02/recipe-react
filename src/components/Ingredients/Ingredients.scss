@@ -1,0 +1,46 @@
+.ingredients {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+	li {
+		font-family: 'Baskerville', serif;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 25px;
+		margin-bottom: 5px;
+		color: #212121;
+	}
+}
+
+@media only screen and (max-width: 920px) {
+	.ingredients {
+		li {
+			font-size: 18px;
+		}
+	}
+}
+
+@media only screen and (max-width : 780px) {
+	.ingredients {
+		margin-bottom: 34px;
+	}
+}
+
+@media only screen and (max-width : 540px) {
+	.ingredients {
+		li {
+			font-size: 16px;
+		}
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	.ingredients {
+		li {
+			font-size: 14px;
+			line-height: 20px;
+			margin-bottom: 3px;
+		}
+	}
+}

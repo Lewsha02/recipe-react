@@ -1,0 +1,194 @@
+$accent-color: #b5946b;
+$accent-pudding: 34px;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1430px;
+	margin: 0 auto;
+}
+
+h2.recipe-heading {
+	font-size: 15px;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: $accent-color;
+	text-align: center;
+	margin-top: $accent-pudding;
+}
+
+.recipes {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.recipe {
+	&__title {
+		font-family: 'Rubik', sans-serif;
+		font-size: 40px;
+		font-weight: 500;
+		color: #955251;
+		text-transform: uppercase;
+		text-align: center;
+		margin-top: 34px;
+	}
+
+	&__descr {
+		text-align: center;
+		font-family: 'Baskerville', serif;
+		font-style: italic;
+		font-size: 20px;
+		line-height: 25px;
+		max-width: 800px;
+		margin: 34px auto;
+		color: #212121;
+	}
+
+	&__img {
+		width: 700px;
+		height: 450px;
+		background-position: center;
+		background-size: cover;
+		margin: 0 auto;
+	}
+
+	&__text {
+		margin-top: 34px;
+		padding-top: 34px;
+		border-top: 1px solid #b5946b;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		.instruction {
+			flex-basis: 70%;
+
+			p {
+				font-family: 'Baskerville', serif;
+				font-weight: normal;
+				font-size: 20px;
+				line-height: 25px;
+				margin-bottom: 35px;
+				color: #212121;
+			}
+		}
+	}
+}
+
+//
+//
+// Media requests
+//
+//
+//
+
+@media only screen and (max-width: 920px) {
+	.recipe {
+		&__title {
+			font-size: 35px;
+		}
+
+		&__descr {
+			font-size: 18px;
+		}
+
+		&__img {
+			width: 600px;
+			height: 350px;
+		}
+
+		&__text {
+			.instruction {
+				p {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.recipe {
+		&__title {
+			font-size: 35px;
+		}
+
+		&__descr {
+			font-size: 18px;
+			padding: 0 17px;
+		}
+
+		&__img {
+			width: 550px;
+			height: 300px;
+		}
+
+		&__text {
+			padding: 17px;
+			.instruction {
+				flex-basis: 100%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.recipe {
+		&__title {
+			font-size: 30px;
+		}
+
+		&__descr {
+			font-size: 16px;
+		}
+
+		&__img {
+			width: 450px;
+			height: 260px;
+		}
+
+		&__text {
+			.instruction {
+				p {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.recipe {
+		&__title {
+			font-size: 25px;
+		}
+
+		&__descr {
+			margin: 17px auto;
+			font-size: 13px;
+		}
+
+		&__img {
+			width: 300px;
+			height: 160px;
+		}
+
+		&__text {
+			margin-top: 17px;
+			padding-top: 17px;
+			.instruction {
+				p {
+					font-size: 14px;
+					margin-bottom: 17px;
+				}
+			}
+		}
+	}
+}
