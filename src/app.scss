@@ -30,6 +30,10 @@ h2.recipe-heading {
 }
 
 .recipe {
+	&-item {
+		color: transparent;
+	}
+
 	&__title {
 		font-family: 'Rubik', sans-serif;
 		font-size: 40px;

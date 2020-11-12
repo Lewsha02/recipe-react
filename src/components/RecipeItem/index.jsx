@@ -2,17 +2,17 @@ import React from 'react';
 
 import './RecipeItem.scss';
 
-const RecipeItem = () => {
+const RecipeItem = ({ imageUrl, title }) => {
 	return (
-		<div className='recipe-item'>
+		<React.Fragment>
 			<div
 				className='recipe-item__img'
 				style={{
 					backgroundImage:
-						'url(https://iamafoodblog.b-cdn.net/wp-content/uploads/2019/02/full-english-7361.jpg)',
+						`url(${imageUrl}`,
 				}}></div>
-			<div className='recipe-item__text'>English breakfast</div>
-		</div>
+			<div className='recipe-item__text'>{title}</div>
+		</React.Fragment>
 	);
 };
 
