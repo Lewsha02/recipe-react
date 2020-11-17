@@ -24,7 +24,7 @@ const Home = () => {
 						return (
 							<Link to={{
 								pathname: "/recipe",
-								state: {meal}
+								state: meal
 							}} key={meal.id} className="recipe-item">
 								<RecipeItem
 									imageUrl={meal.imageUrl}
