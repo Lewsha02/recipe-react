@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './Ingredients.scss';
 
@@ -14,6 +15,10 @@ const Ingredients = ( {ingredients} ) => {
 			}
 		</ul>
 	);
+};
+
+Ingredients.propTypes = {
+	ingredients: PropTypes.array
 };
 
 export default Ingredients;
