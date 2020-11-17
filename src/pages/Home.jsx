@@ -9,7 +9,7 @@ const Home = () => {
 	const [meals, setMeals] = useState([]);
 
 	useEffect(() => {
-		axios.get('http://localhost:3001/meals').then((resp) => {
+		axios.get('/meals').then((resp) => {
 			const data = resp.data;
 			setMeals(data);
 		});
